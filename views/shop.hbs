@@ -1,0 +1,26 @@
+<!-- As a heading -->
+<nav class="navbar navbar-dark bg-dark">
+    <span class="navbar-brand mb-0 h1 shop-title">Tienda de gente guay</span>
+</nav>
+
+<div class="container shop-matrix">
+    <div class="row">
+
+        {{#each allPhones}}
+        <div class="col-3 product-card">
+
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="{{images.[0]}}" alt="">
+                <div class="card-body">
+                    <h5 class="card-title">{{title}}</h5>
+                    <p class="card-text">{{description}}</p>
+                    <p "card-text"><b>{{brand}}</b></p>
+                    <p "card-text">{{price}}€</p>
+                </div>
+            </div>
+
+        </div>
+        {{/each}}
+
+    </div>
+</div>
